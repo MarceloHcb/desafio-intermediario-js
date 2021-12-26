@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio intermediário Js 3</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/reset.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="esquerda">
+            <h1>FICOU COM DÚVIDA?<br>
+                NOS MANDE UMA MENSAGEM!
+            </h1>
+            <P>caso tenha ficado com qualquer dúvida basta nos mandar
+                uma mensagem e entraremos em contato em menos de 24h.</P>
+        </div>
+        <div class="formulario">
+            <form>
+                <input id="nome" type="text" name="nome" placeholder="Nome completo *" required maxlength="25">
+                <p class="off" id="erro1">campo obrigatório</p>
+                <input type="email" id="email" name="email" placeholder="Email *" required maxlength="50">
+                <p class="off" id="erro2">campo obrigatório</p>
+                <input type="number" maxlength="12" id="telefone" name="telefone" placeholder="Telefone *" required>
+                <p class="off" id="erro3">campo obrigatório</p>
+                <textarea name="texto" id="texto" cols="22" rows="4" placeholder="Mensagem *" required
+                    maxlength="100"></textarea>
+                <p class="off" id="erro4">campo obrigatório</p>
+                <p> * campos obrigatórios</p>
+                <button type="submit" class="botao" id="botao">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

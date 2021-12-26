@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+html{
+    width: 100%;
+    height: 100%;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    background-color: #E5E5E5;
+}
+.container{
+    display: flex;
+    width: 655px;
+    height: 347px;
+    border-radius: 21px;
+    background-color: #FCFCFC;  
+    box-shadow: 0px 20px 20px -10px rgba (0,0,0,0.25);
+    position: relative;
+    align-items: center;    
+}
+.imagem{
+    top:30px;
+    position: absolute;
+    width: 278px;
+    height: 293px;
+    left: -94px;
+}
+.textos{    
+    display: flex;
+    flex-direction: column;           
+    margin-left: 200px;        
+}
+.pergunta{
+    display: flex;
+    flex-direction: column;  
+    justify-content: space-between;
+    padding: 15px;
+    align-items:flex-start;
+}
+.resposta{ 
+    overflow: hidden;
+    max-height: 0;
+    font-size: 13px;
+    font-weight: 300;
+    width: 90%;    
+}
+
+h1{   
+    padding: 13px;
+    font-weight: 700;
+    font-size: 25px;
+}
+p{
+    padding-top: 5px;
+}
+hr{
+    width: 90%;
+    margin-left: 15px;
+}
+.seta{    
+    display: flex;     
+    align-self: flex-end;   
+    position: absolute;    
+   margin-top: 10px ;
+    margin-right: 25px;    
+    width:15px ;
+    height: 8.86px;
+    cursor:pointer;
+}
+.seta-off{   
+  max-width: 0;
+}
+input{
+   display: none;
+}
+label{
+    display: flex;     
+    align-self: flex-end;   
+    position: absolute;    
+    margin-top: 10px;
+    margin-right: 25px;    
+    width:15px ;
+    height: 8.86px;
+}
+#input:checked ~ .resposta{
+    overflow: visible;
+    max-height: 100%; 
+}
+#input1:checked ~ .resposta{
+    overflow: visible;
+    max-height: 100%;    
+}
+#input2:checked ~ .resposta{
+    overflow: visible;
+    max-height: 100%;   
+}
+input[type="radio"]:checked ~ .seta-off {  
+   max-width: 100%;  
+}
+
+
