@@ -3,7 +3,7 @@ let direita = document.getElementById("arrow-right")
 let esquerda = document.getElementById("arrow-left")
 let conteudo = document.getElementsByClassName("content")
 let h1 = document.getElementById("h1")
-let botao = document.getElementById("botao")
+let botao = document.getElementById("saiba-mais-link")
 let imagem1 = document.getElementById("image1")
 let imagem2 = document.getElementById("image2")
 let imagem3 = document.getElementById("image3")
@@ -22,7 +22,6 @@ direita.addEventListener("click", proximaImagem)
 function proximaImagem() {
     contador++
     if (contador == 1) {
-
         imagem1.classList.add("desativada")
         imagem2.classList.remove("desativada")
         conteudo2.classList.remove("desativada")
@@ -43,9 +42,7 @@ function proximaImagem() {
     if (contador >= 3) {
         contador = 3
         contador1 = 4
-    }
-
-    console.log(contador)
+    }    
 }
 contador1 = 4
 function imagemAnterior() {
@@ -74,6 +71,5 @@ function imagemAnterior() {
     if (contador1 <= 1) {
         contador1 = 1
         contador = 0
-    }
-    console.log(contador1)
+    }   
 }
