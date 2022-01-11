@@ -29,5 +29,4 @@ function anterior() {
         contador = 0
         this.style.opacity = 0.3
     }
-    console.log(inputs)
-}
+   }
