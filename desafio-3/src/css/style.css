@@ -45,15 +45,9 @@ input{
     border-radius: 5px;
     border: 2px solid black;
 }
-/* input:invalid{
-    border-color: red ;
-} */
 input:valid{
     border-color: #3CCC87;
 }
-/* textarea:invalid{
-    border-color: red;
-} */
 #texto:valid{
     border-color: #3CCC87;
 }

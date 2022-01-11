@@ -9,9 +9,6 @@ const erro1 = document.getElementById("erro1")
 const erro2 = document.getElementById("erro2")
 const erro3 = document.getElementById("erro3")
 const erro4 = document.getElementById("erro4")
-for(index = 0 ; index < input.length ; index++){
-  
-}
 botao.addEventListener("click", campos)
 nome.addEventListener("change", verificar)
 email.addEventListener("change", verificar1)
